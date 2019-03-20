@@ -30,7 +30,7 @@ app.use(bodyParser.json()); // set its json function as global middleware for th
 app.use('/images', express.static(path.join(__dirname, 'images')));
 // REGISTER ROUTER FOR ALL REQUEST TO /api/sauces TO THE APP
 app.use('/api/auth', userRoutes);
-app.use('/api/new-sauce', saucesRoutes);
+// app.use('/api/new-sauce', saucesRoutes);
 app.use('/api/sauces', saucesRoutes);
 
 module.exports = app;
